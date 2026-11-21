@@ -1,0 +1,12 @@
+{"id":"q01","type":"in_scope","role":"hr","question":"公司每年什么时候调薪，幅度多少","expect":["10%","15%"]}
+{"id":"q02","type":"in_scope","role":"hr","question":"年假天数怎么算","expect":["5","15"]}
+{"id":"q03","type":"in_scope","role":"finance","question":"报销金额多少需要财务总监审批","expect":["5000","20000"]}
+{"id":"q04","type":"in_scope","role":"finance","question":"下一年预算什么时候完成审批","expect":["12 月"]}
+{"id":"q05","type":"in_scope","role":"engineering","question":"生产环境发布窗口是什么时候","expect":["周二","周四"]}
+{"id":"q06","type":"in_scope","role":"engineering","question":"单元测试覆盖率要求多少","expect":["70%"]}
+{"id":"q07","type":"out_of_scope","role":"engineering","question":"公司每年调薪幅度多少","expect":["资料中没有"]}
+{"id":"q08","type":"out_of_scope","role":"guest","question":"报销单什么时候提交","expect":["资料中没有"]}
+{"id":"q09","type":"out_of_scope","role":"finance","question":"生产环境怎么回滚","expect":["资料中没有"]}
+{"id":"q10","type":"public","role":"guest","question":"公司什么时候成立，总部在哪","expect":["2019","杭州"]}
+{"id":"q11","type":"public","role":"hr","question":"企业版年费多少，支持多少并发","expect":["12","50"]}
+{"id":"q12","type":"public","role":"engineering","question":"公司 2025 年营收多少","expect":["1.2"]}
