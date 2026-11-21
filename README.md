@@ -2,6 +2,8 @@
 
 同一套 RAG，加上部门权限：**检索层按角色过滤**，越权问题直接拒答；带限流、缓存与失败降级。
 
+**在线 Demo**：https://kb-acl-agent.onrender.com
+
 ## 角色与权限
 
 | 角色 | 可见文档 |
@@ -64,6 +66,10 @@ curl -X POST http://127.0.0.1:8010/chat \
 - ACL 用布尔字段 `acl_<dept>`，因为 Chroma metadata 不支持数组；查询用 `$or: [acl_public, acl_<role>]`。
 - 成本控制：每角色 20 次/分钟限流、60 秒答案缓存、上下文最多 5 段 × 400 字。
 - 失败降级：检索/生成异常返回 503 + 可读原因，不把 traceback 甩给用户。
+
+## 相关项目
+
+第一个项目（手写 RAG + 工具调用 + 评测）：[llm-app-portfolio](https://github.com/luogongmu-cmd/llm-app-portfolio) · [Demo](https://llm-app-portfolio.onrender.com)
 
 ## 已知限制
 
